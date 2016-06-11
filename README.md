@@ -1,2 +1,7 @@
-# backbone-examples
-Backbone examples.
+# Backbone Examples
+
+A serie of Backbone examples.
+
+## License
+
+[MIT](./LICENSE)

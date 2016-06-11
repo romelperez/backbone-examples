@@ -1,0 +1,19 @@
+<div class="header-container {{=colorClass}}">
+    <div class="row">
+        <div class="column small-12">
+            <h1>Select cars by color:</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column small-12 medium-6">
+            <select>
+                {{ colors.forEach(function (color) { }}
+                <option value="{{=color.id}}" {{= color.id === currentColor.id ? 'selected' : ''}}>{{=color.name}}</option>
+                {{ }); }}
+            </select>
+        </div>
+        <div class="column small-12 medium-6">
+            <p>Current color: <b>{{=currentColor.name}}</b></p>
+        </div>
+    </div>
+</div>

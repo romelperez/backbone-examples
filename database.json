@@ -1,0 +1,62 @@
+{
+    "cars": [{
+        "id": 0,
+        "name": "Ferrari",
+        "color": 27,
+        "price": 300000
+    }, {
+        "id": 1,
+        "name": "Nissan",
+        "color": 25,
+        "price": 220000
+    }, {
+        "id": 2,
+        "name": "Toyota",
+        "color": 26,
+        "price": 190000
+    }, {
+        "id": 3,
+        "name": "Mazda",
+        "color": 25,
+        "price": 250000
+    }, {
+        "id": 4,
+        "name": "BMW",
+        "color": 27,
+        "price": 350000
+    }, {
+        "id": 5,
+        "name": "Audi",
+        "color": 27,
+        "price": 320000
+    }, {
+        "id": 6,
+        "name": "Acura",
+        "color": 25,
+        "price": 250000
+    }, {
+        "id": 7,
+        "name": "Lexus",
+        "color": 26,
+        "price": 225000
+    }, {
+        "id": 8,
+        "name": "Lamborghini",
+        "color": 27,
+        "price": 340000
+    }],
+    "currentColor": [{
+        "id": 0,
+        "color": 26
+    }],
+    "colors": [{
+        "id": 25,
+        "name": "red"
+    }, {
+        "id": 26,
+        "name": "green"
+    }, {
+        "id": 27,
+        "name": "blue"
+    }]
+}
