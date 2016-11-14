@@ -1,28 +1,29 @@
-var express = require('express');
-var MDB = require('prhone-mdb');
+'use strict';
 
-var app = express();
-var port = process.env.PORT || 7777;
-var mdb = new MDB(__dirname +'/database.json');
+const express = require('express');
+const bodyParser = require('body-parser');
+const MDB = require('prhone-mdb');
+const api = {
+    cars: require('./api/cars'),
+    colors: require('./api/colors')
+};
 
-app.use(express.static(__dirname + '/assets'));
+const port = process.env.PORT || 7777;
+const app = express();
+const mdb = new MDB(__dirname +'/database.json');
 
-app.get('/api/cars', function (req, res, next) {
-    mdb.getAll('cars').then(cars => res.json(cars), err => res.status(500).end());
-});
+app.set('view engine', 'ejs');
+app.set('views', './views');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname +'/assets'));
 
-app.get('/api/colors', function (req, res, next) {
-    mdb.getAll('colors').then(colors => res.json(colors), err => res.status(500).end());
-});
+// Define API route handlers.
+for (let i in api) {
+    api[i](app, mdb);
+}
 
-app.get('/api/colors/current/:userId', function (req, res, next) {
-    var userId = Number(req.params.userId);
-    mdb.getById('currentColor', userId).then(currentColor => {
-        res.json({ color: currentColor.color });
-    }, err => {
-        res.status(500).end();
-    });
-});
+app.get('/app1', (req, res) => res.render('app1'));
 
 app.listen(port, function(err) {
     if (err) throw err;
