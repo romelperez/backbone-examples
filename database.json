@@ -51,12 +51,15 @@
     }],
     "colors": [{
         "id": 25,
-        "name": "red"
+        "name": "red",
+        "hex": "#ee3b30"
     }, {
         "id": 26,
-        "name": "green"
+        "name": "green",
+        "hex": "#2dcb2a"
     }, {
         "id": 27,
-        "name": "blue"
+        "name": "blue",
+        "hex": "#2749c2"
     }]
 }
