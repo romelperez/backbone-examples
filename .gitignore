@@ -31,5 +31,5 @@ dump.rdb
 npm-debug.log
 
 # Built assets
-assets/css/**/.css
-assets/js/**/.js
+assets/css/**/*.css
+assets/js/**/*.js
