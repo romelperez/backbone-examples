@@ -7,6 +7,8 @@ const State = require('models/State');
 
 module.exports = {
 
+    view: null,
+
     colors: new Colors(),
 
     cars: new Cars(),
