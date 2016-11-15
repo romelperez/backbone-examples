@@ -1,5 +1,8 @@
-const Car = require('../models/Car');
+import Model from '../models/Car';
 
-module.exports = Backbone.Collection.extend({
-    model: Car
+const Collection = Backbone.Collection.extend({
+    url: '/api/cars',
+    model: Model
 });
+
+export default Collection;

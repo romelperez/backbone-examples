@@ -1,5 +1,8 @@
-const Color = require('../models/Color');
+import Model from '../models/Color';
 
-module.exports = Backbone.Collection.extend({
-    model: Color
+const Collection = Backbone.Collection.extend({
+    url: '/api/colors',
+    model: Model
 });
+
+export default Collection;

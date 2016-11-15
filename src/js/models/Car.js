@@ -1,6 +1,6 @@
 module.exports = Backbone.Model.extend({
     defaults: {
-        id: '',
+        id: null,
         name: '',
         color: '',
         price: 0
