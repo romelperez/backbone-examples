@@ -1,0 +1,24 @@
+<button class="remove button tiny warning">Remove</button>
+
+<div class="column row">
+    <small>Name:</small>
+    <input class="name" type="text" value="{{=car.name}}">
+</div>
+
+<div class="row">
+    <div class="column small-6">
+        <small>Price:</small>
+        <input class="price" type="number" value="{{=car.price}}">
+    </div>
+    <div class="column small-6">
+        <small>Color:</small>
+        <select class="color">
+            {{ _(colors || []).each(function (color) { }}
+            <option value="{{=color.id}}"
+                {{ if (color.id === car.color) print('selected'); }}>
+                {{=color.name}}
+            </option>
+            {{ }); }}
+        </select>
+    </div>
+</div>

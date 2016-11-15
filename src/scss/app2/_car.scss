@@ -1,0 +1,41 @@
+.car {
+    position: relative;
+
+    display: block;
+    margin-bottom: 1rem;
+    border: 2px solid #3b3b3b;
+    padding: 1.5rem 0.5rem;
+    width: auto;
+    height: auto;
+
+    background-color: #3b3b3b;
+    border-radius: 2px;
+    color: #fff;
+
+    input,
+    input:hover,
+    input:focus,
+    select,
+    select:hover,
+    select:focus {
+        margin: 0;
+        border-color: #777;
+        border-radius: 2px;
+        background: #1b1b1b;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        outline: none;
+    }
+    .name {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .remove {
+        position: absolute;
+        right: 1.5rem;
+        top: 0.5rem;
+        color: #fff;
+        font-weight: bold;
+    }
+}
