@@ -33,7 +33,8 @@ const global = {
 
     // Global import paths for SASS files.
     sassImports: [
-        './node_modules/foundation-sites/scss'
+        './node_modules/foundation-sites/scss',
+        './src/scss'
     ],
 
     // Watch SASS files for changes to build CSS files.
@@ -103,6 +104,14 @@ const global = {
             file: 'app1',
             destFolder: '/',
             destFile: 'app1'
+        },
+
+        // App2
+        {
+            folder: './src/js/app2',
+            file: 'app2',
+            destFolder: '/',
+            destFile: 'app2'
         }
     ],
 

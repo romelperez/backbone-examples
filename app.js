@@ -24,6 +24,7 @@ for (let i in api) {
 }
 
 app.get('/app1', (req, res) => res.render('app1'));
+app.get('/app2', (req, res) => res.render('app2'));
 
 app.listen(port, function(err) {
     if (err) throw err;

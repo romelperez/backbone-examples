@@ -7,4 +7,4 @@ gulp.task('browserify', tasks.browserify);
 gulp.task('views', tasks.views);
 gulp.task('watch', tasks.watch);
 gulp.task('build', ['sass', 'browserify']);
-gulp.task('default', ['watch']);
+gulp.task('default', ['build', 'watch']);
